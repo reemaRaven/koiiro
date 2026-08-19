@@ -870,11 +870,16 @@ em {
 
 .cast-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
   margin-top: 2rem;
+}
+
+/* The four cast members still awaiting art sit four-up, with no empty cell */
+.cast-grid.four-up {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .cast-item {
@@ -1067,44 +1072,18 @@ em {
 }
 
 .creator-portrait {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   background: linear-gradient(135deg, var(--green-deep) 0%, var(--shadow) 50%, var(--bg) 100%);
   border: 1px solid var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-.creator-portrait::before {
-  content: '暗';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--nameless) 0%, var(--green-glow) 50%, var(--gold-soft) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-family: 'Noto Serif JP', serif;
-  font-size: 8rem;
-  font-weight: 300;
-}
-
-.creator-portrait::after {
-  content: 'REEMA MAJUMDAR';
-  position: absolute;
-  bottom: 1.5rem;
-  left: 0;
-  right: 0;
-  font-family: 'Cinzel', serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.3em;
-  color: var(--cream-mute);
-  text-align: center;
+.creator-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ── Footer ── */
@@ -1219,6 +1198,7 @@ footer .copyright {
 
   .lokas-grid,
   .cast-grid,
+  .cast-grid.four-up,
   .cast-elevated {
     grid-template-columns: 1fr;
   }
