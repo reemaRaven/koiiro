@@ -410,7 +410,7 @@ export default function Home() {
           </div>
 
           <div className="cast-caption">Still text-only, pending art</div>
-          <div className="cast-grid">
+          <div className="cast-grid four-up">
             <div className="cast-item">
               <div className="name">BALI</div>
               <div className="title">The Trickster-King of Sutala</div>
@@ -625,7 +625,9 @@ export default function Home() {
             About <span>the Author</span>
           </h2>
           <div className="creator">
-            <div className="creator-portrait"></div>
+            <div className="creator-portrait">
+              <img src="/reema-majumdar.webp" alt="Illustrated portrait of Reema Majumdar" />
+            </div>
             <div>
               <p className="lead">
                 Reema Majumdar is a tech professional based in Noida, India. Koi Iro has been a
