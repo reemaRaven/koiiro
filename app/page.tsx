@@ -1,4 +1,5 @@
 import RevealObserver from './components/RevealObserver'
+import CharacterPortrait from './components/CharacterPortrait'
 
 export default function Home() {
   return (
@@ -282,65 +283,87 @@ export default function Home() {
             {/* Iro */}
             <div className="char-card iro">
               <div className="kanji-watermark">色</div>
-              <div className="role">Protagonist</div>
-              <h3>IRO KUROSAKI</h3>
-              <div className="title">The Dark Colour</div>
-              <p>
-                Half-Indian, half-Japanese. Born of Bhuvar Loka with Patala Loka maternal lineage.
-                The bridge between dark and light. Her name means &ldquo;dark colour&rdquo; — a
-                contradiction that turned out to be a description.
-              </p>
-              <dl className="traits">
-                <dt>Origin</dt>
-                <dd>Bhuvar / Patala</dd>
-                <dt>Power</dt>
-                <dd>The nameless colour</dd>
-                <dt>Role</dt>
-                <dd>The bridge</dd>
-              </dl>
+              <div className="top">
+                <div className="role">Protagonist</div>
+                <h3>IRO KUROSAKI</h3>
+                <div className="title">The Dark Colour</div>
+              </div>
+              <div className="portrait">
+                <CharacterPortrait src="/characters/iro.webp" alt="Iro Kurosaki" />
+              </div>
+              <div className="bottom">
+                <dl className="traits">
+                  <dt>Origin</dt>
+                  <dd>Bhuvar / Patala</dd>
+                  <dt>Power</dt>
+                  <dd>The nameless colour</dd>
+                  <dt>Role</dt>
+                  <dd>The bridge</dd>
+                </dl>
+                <p>
+                  Half-Indian, half-Japanese. Born of Bhuvar Loka with Patala Loka maternal lineage.
+                  The bridge between dark and light. Her name means &ldquo;dark colour&rdquo; — a
+                  contradiction that turned out to be a description.
+                </p>
+              </div>
             </div>
 
             {/* Rishi */}
             <div className="char-card">
               <div className="kanji-watermark">建</div>
-              <div className="role">Architect</div>
-              <h3>RISHI</h3>
-              <div className="title">The Builder</div>
-              <p>
-                A foundling from Talatala Loka raised on Earth. Architect of realities. The barkeeper
-                who built a community from rubble and discovered, decades later, that he was building
-                the cosmic anchor.
-              </p>
-              <dl className="traits">
-                <dt>Origin</dt>
-                <dd>Talatala</dd>
-                <dt>Power</dt>
-                <dd>Structural reshaping</dd>
-                <dt>Role</dt>
-                <dd>The architect</dd>
-              </dl>
+              <div className="top">
+                <div className="role">Architect</div>
+                <h3>RISHI</h3>
+                <div className="title">The Builder</div>
+              </div>
+              <div className="portrait">
+                <CharacterPortrait src="/characters/rishi.webp" alt="Rishi" />
+              </div>
+              <div className="bottom">
+                <dl className="traits">
+                  <dt>Origin</dt>
+                  <dd>Talatala</dd>
+                  <dt>Power</dt>
+                  <dd>Structural reshaping</dd>
+                  <dt>Role</dt>
+                  <dd>The architect</dd>
+                </dl>
+                <p>
+                  A foundling from Talatala Loka raised on Earth. Architect of realities. The
+                  barkeeper who built a community from rubble and discovered, decades later, that he
+                  was building the cosmic anchor.
+                </p>
+              </div>
             </div>
 
             {/* Neil */}
             <div className="char-card">
               <div className="kanji-watermark">創</div>
-              <div className="role">Creator</div>
-              <h3>NEIL</h3>
-              <div className="title">The Creator Child</div>
-              <p>
-                A child connected to Jana Loka, carrying Srishti Shakti — the power of creation. The
-                boy who draws worlds and accidentally makes them real.
-              </p>
-              <dl className="traits">
-                <dt>Origin</dt>
-                <dd>Jana</dd>
-                <dt>Power</dt>
-                <dd>Srishti Shakti</dd>
-                <dt>Role</dt>
-                <dd>The truth-seer</dd>
-              </dl>
+              <div className="top">
+                <div className="role">Creator</div>
+                <h3>NEIL</h3>
+                <div className="title">The Creator Child</div>
+              </div>
+              <div className="portrait">
+                <CharacterPortrait src="/characters/neil.webp" alt="Neil" />
+              </div>
+              <div className="bottom">
+                <dl className="traits">
+                  <dt>Origin</dt>
+                  <dd>Jana</dd>
+                  <dt>Power</dt>
+                  <dd>Srishti Shakti</dd>
+                  <dt>Role</dt>
+                  <dd>The truth-seer</dd>
+                </dl>
+                <p>
+                  A child connected to Jana Loka, carrying Srishti Shakti — the power of creation.
+                  The boy who draws worlds and accidentally makes them real.
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -356,6 +379,37 @@ export default function Home() {
             together.
           </p>
 
+          <div className="cast-elevated">
+            <div className="companion-card">
+              <div className="portrait">
+                <CharacterPortrait src="/characters/revati-amma.webp" alt="Revati Amma" />
+              </div>
+              <div className="label">
+                <div className="name">REVATI AMMA</div>
+                <div className="title">The Companion Soul</div>
+                <p>
+                  The old woman by the bonfire who told stories since before time kept track. A
+                  consciousness loved across every lifetime. Her prayers held the anchor when nothing
+                  else could.
+                </p>
+              </div>
+            </div>
+            <div className="companion-card">
+              <div className="portrait">
+                <CharacterPortrait src="/characters/ashwattha.webp" alt="Ashwattha" />
+              </div>
+              <div className="label">
+                <div className="name">ASHWATTHA</div>
+                <div className="title">The Earth Yogi</div>
+                <p>
+                  The wandering teacher who arrived at a bar one evening and taught the Charachari
+                  Mudra. His consciousness now lives in the crowns of those he touched.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="cast-caption">Still text-only, pending art</div>
           <div className="cast-grid">
             <div className="cast-item">
               <div className="name">BALI</div>
@@ -387,23 +441,6 @@ export default function Home() {
               <p>
                 A trader who was not a trader — a Vitala noble in disguise. Material transmutation
                 through gold rings. The alliance&apos;s logistical foundation.
-              </p>
-            </div>
-            <div className="cast-item">
-              <div className="name">REVATI AMMA</div>
-              <div className="title">The Companion Soul</div>
-              <p>
-                The old woman by the bonfire who told stories since before time kept track. A
-                consciousness loved across every lifetime. Her prayers held the anchor when nothing
-                else could.
-              </p>
-            </div>
-            <div className="cast-item">
-              <div className="name">ASHWATTHA</div>
-              <div className="title">The Earth Yogi</div>
-              <p>
-                The wandering teacher who arrived at a bar one evening and taught the Charachari
-                Mudra. His consciousness now lives in the crowns of those he touched.
               </p>
             </div>
           </div>
